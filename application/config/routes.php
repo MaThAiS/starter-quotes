@@ -44,6 +44,9 @@ $route['first'] = 'first';
 $route['lock/(:any)/(:any)'] = "welcome/shucks";
 $route['sleep'] = "first/zzz";
 $route['last'] = 'last';
+
+$route['show/(:num)'] = "first/gimme/$1";
+
 $route['((comp)(\d{4}))/wisdom'] = "wise/bingo";
 $route['dunno'] = function ()
 {
@@ -54,6 +57,7 @@ $route['dunno'] = function ()
     header('Content-Disposition: inline');
     readfile($source);
 };
+
 
 
 
