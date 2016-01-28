@@ -44,7 +44,20 @@ $route['first'] = 'first';
 $route['lock/(:any)/(:any)'] = "welcome/shucks";
 $route['sleep'] = "first/zzz";
 $route['last'] = 'last';
+
 $route['show/(:num)'] = "first/gimme/$1";
+
+$route['((comp)(\d{4}))/wisdom'] = "wise/bingo";
+$route['dunno'] = function ()
+{
+    $source = "./data/CuteKitty.jpg";
+    if (!file_exists($source)) { show_404($source); }
+    //$mimeType = get_mime_by_extension($source);
+    header("Content-type: " . "image/jpeg");
+    header('Content-Disposition: inline');
+    readfile($source);
+};
+
 
 
 
