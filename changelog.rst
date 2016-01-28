@@ -24,5 +24,7 @@ Jan 27 2016 - 1:22
 
 Jan 28 2016 - 1:39 AM
 
-- Link 8 feature added
+- Link 8 feature added and re-added link to routes
+
+Jan 28 2016 - 2:15 PM
 
