@@ -43,9 +43,8 @@ $route['404_override'] = '';
 $route['first'] = 'first';
 $route['lock/(:any)/(:any)'] = "welcome/shucks";
 $route['sleep'] = "first/zzz";
-$route['last/(:any)'] = 'last';
 $route['last'] = 'last';
-
+$route['show/(:num)'] = "first/gimme/$1";
 
 
 
